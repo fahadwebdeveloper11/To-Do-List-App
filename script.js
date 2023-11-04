@@ -25,12 +25,10 @@ addBtn.addEventListener('click', function () {
         img.addEventListener('click', function () {
             if (check === 1) {
                 img.src = "./images/checked.png"
-                inputTask.style.textDecoration = "line-through"
                 check = 0
             }
             else {
                 img.src = "./images/unchecked.png"
-                inputTask.style.textDecoration = "none"
                 check = 1
             }
         })
@@ -57,13 +55,11 @@ addBtn.addEventListener('click', function () {
                 editBtn.innerText = "Save"
                 inputTask.removeAttribute("readonly")
                 inputTask.focus()
-                inputTask.style.textDecoration = "none"
                 check2 = 0
             }
             else {
                 editBtn.innerText = "Edit"
                 inputTask.setAttribute("readonly", '')
-                inputTask.style.textDecoration = "line-through"
                 check2 = 1
             }
 
